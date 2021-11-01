@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Rock, Paper, Scissors</title>
-  <meta charset="UTF-8"/>
-</head>
-<body>
-  <script>
-//Computer Choice Functions
-    function computerChoice(){
+function computerChoice(){
     var computerOptions = ['Rock', 'Paper', 'Scissors'];
     var computerPick = computerOptions[Math.floor(Math.random() * computerChoice.length)]
 }
-//Console.log to test computerChoice
+
 console.log(computerChoice());
 
-//Player Choice Input
 function playerChoice(){
     var person = prompt("Please Enter Rock, Paper, or Scissors","Rock" );
 } 
 
-//Determining the mechanics
 function playRound(playerChoice,computerChoice){
 //The Code for a Tie
     if (playerChoice === computerChoice){
@@ -48,13 +37,6 @@ if (playerChoice == 'Scissors' && computerChoice == 'Rock'){
     return "Computer Wins!"
 }
   }
-  
 
-
-      
-
-      
-    
-  </script>
-</body>
-</html>
+//New Game Functions
+function game()
