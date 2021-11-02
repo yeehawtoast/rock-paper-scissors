@@ -1,3 +1,9 @@
+let playerCount = 0;
+let computerCount = 0;
+var winner = playRound.eval('Person Wins!');
+var loser = playRound.eval('Computer Wins!');
+var tie = playRound.eval("It's A Tie!");
+
 function computerChoice(){
     var computerOptions = ['Rock', 'Paper', 'Scissors'];
     var computerPick = computerOptions[Math.floor(Math.random() * computerChoice.length)]
@@ -39,4 +45,21 @@ if (playerChoice == 'Scissors' && computerChoice == 'Rock'){
   }
 
 //New Game Functions
-function game()
+function game(){
+do{
+    playerChoice();
+    computerChoice;
+    if (winner == true || loser == false){
+        window.alert("You Win!")
+        playerCount++
+    }
+    else if (winner == false || loser == true){
+        window.alert("You Lose")
+        computerCount++
+    }
+    else{
+        window.alert("You tied!")
+    }
+} while (playerCount < 5 || computerCount <5)
+   
+}
