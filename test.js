@@ -49,6 +49,7 @@ function game(){
 do{
     playerChoice();
     computerChoice;
+    playRound();
     if (winner == true || loser == false){
         window.alert("You Win!")
         playerCount++
@@ -61,5 +62,11 @@ do{
         window.alert("You tied!")
     }
 } while (playerCount < 5 || computerCount <5)
+
+if (playerCount == 5){
+    window.alert("GAME OVER! YOU WIN!")
+}
+else if (computerCount == 5)
+    window.alert("GAME OVER! YOU LOSE!")
    
 }
